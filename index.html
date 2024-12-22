@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | AR Christmas</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/d50cc3ee055c5f5e237cc0492cefedce.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/11938d77d5e266ff9a317317b8c77a63.data.br",
+        frameworkUrl: "Build/f737e324294e1163f3c077aa43c86f30.js.br",
+        codeUrl: "Build/6301233bb3ea236304bbd865ca5d6f63.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "CGS",
+        productName: "AR Christmas",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
